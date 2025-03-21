@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <ISO8601PeriodTypes />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Apple Dataset' inline='true' name='federated.0hdaq1y1g1mykb149pei10odqvgk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Apple Dataset' name='textscan.1a3v7id0bfxe2r1cxd05v1q8sz60'>
+            <connection class='textscan' directory='/Users/arlen/Library/CloudStorage/GoogleDrive-arobinson@osiaffiliate.com/My Drive/Data Analytics - Arlen/Tableau/real data/apple-stock' filename='Apple Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1a3v7id0bfxe2r1cxd05v1q8sz60' name='Apple Dataset.csv' table='[Apple Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Open' ordinal='1' />
+            <column datatype='real' name='High' ordinal='2' />
+            <column datatype='real' name='Low' ordinal='3' />
+            <column datatype='real' name='Close' ordinal='4' />
+            <column datatype='real' name='Adj Close' ordinal='5' />
+            <column datatype='integer' name='Volume' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adj Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adj Close]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>Adj Close</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[Apple Dataset.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Apple Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/_h/wm8p_z8j4x3c24hjrwb6qpf80000gn/T/tableau-temp/#TableauTemp_0rn82o10n353mb10pbibp1cfww0e.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/10/2025 10:14:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10954</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Open</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2968</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[High]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>High</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3137</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Low</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3002</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Close</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3116</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Adj Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Adj Close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Adj Close</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4290</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Volume</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Apple Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8277</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Apple Dataset.csv' id='Apple Dataset.csv_793E81F325D94D0AAFD2E69C32E281FB'>
+            <properties context=''>
+              <relation connection='textscan.1a3v7id0bfxe2r1cxd05v1q8sz60' name='Apple Dataset.csv' table='[Apple Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='Open' ordinal='1' />
+                  <column datatype='real' name='High' ordinal='2' />
+                  <column datatype='real' name='Low' ordinal='3' />
+                  <column datatype='real' name='Close' ordinal='4' />
+                  <column datatype='real' name='Adj Close' ordinal='5' />
+                  <column datatype='integer' name='Volume' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Apple Stock Price (2005 - 2024)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Apple Dataset' name='federated.0hdaq1y1g1mykb149pei10odqvgk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hdaq1y1g1mykb149pei10odqvgk'>
+            <column datatype='real' name='[Adj Close]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Attribute' name='[attr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Adj Close]' derivation='Avg' name='[avg:Adj Close:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='relative-date' column='[federated.0hdaq1y1g1mykb149pei10odqvgk].[none:Date:qk]' first-period='-19' include-future='true' include-null='false' last-period='0' period-type-v2='year' />
+          <slices>
+            <column>[federated.0hdaq1y1g1mykb149pei10odqvgk].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]' scope='rows' value='Average Adjusted Closing Price' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]' value='C1033%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0hdaq1y1g1mykb149pei10odqvgk].[attr:Date:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Adj Close:&#9;$</run>
+                <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</rows>
+        <cols>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>iPhone Released</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'>January 9, 2008</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Adj Close: </run>
+              <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2008.0214424951266'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='4.2632566728860501'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-28' y='-169' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>iPad Released</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>April 3, 2010</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Adj Close: </run>
+              <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2010.0682261208576'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='7.8136264886853724'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='0' y='-188' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Apple Watch Released</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>April 24, 2015</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Adj Close: </run>
+              <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2015.1169590643274'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='27.3104069302996'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-28' y='-99' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>iPad Pro Released</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>March 18, 2020</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Adj Close: </run>
+              <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2020.0292397660819'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='92.65392083618508'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-97' y='-52' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>iPhone 14 Released</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>September 7, 2022</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Adj Close: </run>
+              <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2021.9590643274853'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='149.24579270203478'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-118' y='225' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Apple Vision Pro Released</run>
+              <run>Æ&#10;</run>
+              <run bold='true'>June 5, 2023</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Avg. Adj Close: </run>
+              <run bold='true'><![CDATA[<[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2023.0311890838207'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[yr:Date:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='173.22140793969837'>
+                  <node-reference>
+                    <axis>[federated.0hdaq1y1g1mykb149pei10odqvgk].[avg:Adj Close:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-10' y='131' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{CC12E811-1485-43B3-9EB8-B94ABC653754}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F132D7C-5211-4D4A-9683-0943E79070CB}' />
+    </window>
+  </windows>
+</workbook>
